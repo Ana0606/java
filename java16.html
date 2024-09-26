@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mais triste que três tigres tristes</h1>
+
+    <script>
+
+        var horas_t = parseFloat(prompt("Informe a hora trabalhada: "));
+        var vlr_sal_min = parseFloat(prompt("Informe o valor do salário mínimo: "));
+
+        var vlr_hora_t = vlr_sal_min / 2;
+        var vlr_sal_bru = vlr_hora_t * horas_t;
+        var imp = vlr_sal_bru * 3 / 100;
+        var vlr_sal_liq = vlr_sal_bru - imp;
+
+        console.log("O valor das horas trabalhadas é: ", vlr_hora_t.toFixed(2));
+        console.log("O valor do salário bruto é: ", vlr_sal_bru.toFixed(2));
+        console.log("O imposto é: ", imp.toFixed(2));
+        console.log("O valor salário líquido é: ", vlr_sal_liq.toFixed(2));
+        document.write("Horas trabalhadas "+vlr_hora_t)
+
+    </script>
+
+</body>
+</html
